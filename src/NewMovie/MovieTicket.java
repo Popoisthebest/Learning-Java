@@ -17,6 +17,13 @@ public class MovieTicket {
         initSeat();
     }
 
+    // 자리 배열 초기화
+    public static void initSeat() {
+        for (int i = 0; i < 30; i++) {
+            seats[i] = 0;
+        }
+    }
+
     // 영화 선택 setter
     public void setMovie() {
         // 영화 번호 받기
@@ -46,13 +53,6 @@ public class MovieTicket {
         }
     }
 
-    // 자리 배열 초기화
-    public static void initSeat() {
-        for (int i = 0; i < 30; i++) {
-            seats[i] = 0;
-        }
-    }
-
     // 자리 그리기
     public void printSeats() {
         System.out.println();
@@ -78,7 +78,7 @@ public class MovieTicket {
     public void setSeats() {
         int seat;
 
-        // 예외 감지
+        // 예외 감지(Stackoverflow 참고)
         try {
             seat = Integer.parseInt(input.next());
             // 존재하는 자리인지 검사
