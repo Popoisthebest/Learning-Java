@@ -18,7 +18,7 @@ public class MovieTicket {
     }
 
     // 자리 배열 초기화
-    public static void initSeat() {
+    private static void initSeat() {
         for (int i = 0; i < 30; i++) {
             seats[i] = 0;
         }
@@ -107,7 +107,7 @@ public class MovieTicket {
     }
 
     // 자리 배열 재선택
-    public void reSeatsSelect(){
+    private void reSeatsSelect(){
         System.out.print("존재하지 않는 자리입니다. 다시 자리를 선택해 주세요: ");
         setSeats();
     }
@@ -130,13 +130,13 @@ public class MovieTicket {
     }
 
     // 다시 자리 선택
-    public void reOtherSeat() {
+    private void reOtherSeat() {
         System.out.print("이 자리는 이미 선택되어 있습니다. 다른 자리를 다시 선택해 주세요: ");
         setSeats();
     }
 
     // 영수증
-    public void receipt() {
+    private void receipt() {
         System.out.println();
         System.out.println();
         System.out.println("---------------[🧾영수증🧾]---------------");
