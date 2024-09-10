@@ -6,11 +6,11 @@ public class MovieTicket {
     Scanner input = new Scanner(System.in);
 
     // 영화
-    public String movie;
-    public String[] movies = {"듄", "아바타", "기생충"};
+    private String movie;
+    private String[] movies = {"듄", "아바타", "기생충"};
 
     // 자리
-    public static int[] seats = new int[30];
+    private static int[] seats = new int[30];
 
     // 영화 생성자 생성
     public MovieTicket() {
@@ -27,7 +27,7 @@ public class MovieTicket {
     // 영화 선택 setter
     public void setMovie() {
         // 영화 번호 받기
-        String movieStr = input.next();
+         String movieStr = input.next();
 
         // 영화 번호
         int movieNum;
