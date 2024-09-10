@@ -76,7 +76,7 @@ public class MovieTicket {
 
     // 자리 배열 선택
     public void setSeats() {
-        int seat = 0;
+        int seat;
 
         // 예외 감지
         try {
