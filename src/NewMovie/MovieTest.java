@@ -23,5 +23,6 @@ public class MovieTest {
 
         // 추가 자리 선택 여부
         nMT.otherSeat();
+        
     }
 }
