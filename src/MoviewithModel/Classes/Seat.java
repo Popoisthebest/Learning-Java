@@ -1,7 +1,7 @@
 package MoviewithModel.Classes;
 
 public class Seat {
-    private int seatNumber;
+    private final int seatNumber;
     private boolean isBooked;
     
     // Seat 클래스의 기본 생성자
