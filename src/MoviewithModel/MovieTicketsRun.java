@@ -3,12 +3,13 @@ package MoviewithModel;
 import MoviewithModel.Classes.MovieModel;
 import MoviewithModel.Classes.MovieTicket;
 import MoviewithModel.Classes.Receipt;
+import MoviewithModel.Classes.SelectOther.SelectOtherSeats;
 import MoviewithModel.Classes.checkErrors.CheckMovieExist;
 import MoviewithModel.Classes.checkErrors.CheckSeatExist;
 
 import java.util.Scanner;
 
-public class MoiveTest {
+public class MovieTicketsRun {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
@@ -42,6 +43,10 @@ public class MoiveTest {
         System.out.print("원하시는 좌석의 번호를 선택해 주세요: ");
         checkSeatExist.checkSeatNumExist();
         ticket.bookSeat(checkSeatExist.getSeat());
+        
+        // 추가 자리 선택 여부
+        SelectOtherSeats selectOtherSeats = new SelectOtherSeats(ticket);
+        selectOtherSeats.otherSeat();
         
         // 영수증 출력
         Receipt receipt = new Receipt();

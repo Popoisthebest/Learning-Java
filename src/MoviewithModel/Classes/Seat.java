@@ -4,7 +4,7 @@ public class Seat {
     private int seatNumber;
     private boolean isBooked;
     
-    // Seat클래스의 기본 생성자
+    // Seat 클래스의 기본 생성자
     public Seat(int seatNumber) {
         this.seatNumber = seatNumber;
         this.isBooked = false;
