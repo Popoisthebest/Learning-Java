@@ -57,7 +57,9 @@ public class MovieTicket {
     public void printSeats() {
         System.out.println();
         System.out.println("---------------[💺자리💺]---------------");
-
+        
+        
+        // 이미 선택되어있는지 검사
         for (int i = 1; i < 31; i++) {
             if(i % 5 == 0) {
                 if (seats[i - 1] == 1) {

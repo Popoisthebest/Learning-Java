@@ -10,7 +10,7 @@ public class MovieTicket {
     // 선택한 영화
     static String movie;
     // 자리 배열 생성
-    static int[] seats = new int[30];
+    public static int[] seats = new int[30];
 
     public static void main(String[] args) {
         setSeats(); // 자리 초기화
